@@ -1,0 +1,1045 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="live.css">
+    <link rel="icon" type="image/png" href="./assets/faviconrail.ico">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pikaday/css/pikaday.css">
+  <script src="https://cdn.jsdelivr.net/npm/pikaday/pikaday.js"></script>
+    <title>Check Live Train Running Status to Spot Your Train | NTES Enquiry</title>
+</head>
+<body>
+    
+    <nav class="navbar">
+        <div class="container-1">
+            <ul>
+                <li class="logo"><a href="index.html"><img src="./assets/rb_logowhite.svg" alt="Logo"></a></li>
+                <li class="navtext"><a href="index.html">Bus Tickets</a></li>
+                <li class="navtext red-rail"><a href="#">redRail</a></li>
+            </ul>
+            <ul>
+                <li class="navtext">
+                    <li class="help"><a style="text-decoration: none;color: #fff; align-items: center; display: flex; gap: 0.5rem;" href="help.html"><img src="https://www.redbus.in/railways/public/images/help.svg" alt=""><span>Help</span></a></li>
+                </li>
+                <li>
+                    <span class="dropdown">
+                        <img src="https://www.redbus.in/railways/public/images/user_profile.svg" alt="User Profile Icon" onclick="toggleDropdown()">
+                        <button class="dropbtn" onclick="toggleDropdown()"><i class="fas fa-chevron-down"></i></button>
+                        <div id="myDropdown" class="dropdown-content">
+                            <a href="#" class="signup">SignUp / Signin</a>
+                            <a href="#" class="cancel">Cancel Tickets</a>
+                        </div>
+                    </span>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="bread-crumb-wrapper">
+        <div class="bread-crumb">
+            <div class="crumb-link">
+                <a href="index.html">Home</a>
+                <img src="https://www.redbus.in/railways/public/images/chevron_right.svg" alt="">
+            </div>
+            <div class="crumb-link">
+                <a href="#">Trains</a>
+                <img src="https://www.redbus.in/railways/public/images/chevron_right.svg" alt="">
+            </div>
+            <div class="crumb-dstn">Check Train Running Status</div>
+        </div>
+    </div>
+
+    <section class="section-1">
+        <div class="container-1">
+            <div class="banner">
+                <div class="logo">
+                    <span class="text">Check Live Train Status</span>
+                    <img class="rails-logo" src="https://www.redbus.in/railways/public/images/rails_logo_white.svg" alt="">
+                </div>
+
+                <div class="irctc-logo">
+                    <img src="https://www.redbus.in/railways/public/images/irctc_logo_pnr.svg" alt="">
+                    <span class="irctc">Authorised by <span>IRCTC</span></span>
+                </div>
+
+                <div class="widget">
+                    <div class="wrapper">
+                        <a href="redRail.html" style="text-decoration: none;" class="selector" data-value="book-tickets">
+                            <p>Book Train tickets</p>
+                            <div class="radio-btn-outer ">
+                                <div class="radio-btn-inner "></div>
+                            </div>
+                        </a>
+                        <a href="pnr.html" style="text-decoration: none;"  class="selector" data-value="pnr-status">
+                            <p>Check PNR Status</p>
+                            <div class="radio-btn-outer red-outer-border">
+                                <div class="radio-btn-inner red-background"></div>
+                            </div>
+                        </a>    
+                        <a href="live-status.html" style="text-decoration: none;"  class="selector" data-value="live-status">
+                            <p>Live Train Status</p>
+                            <div class="radio-btn-outer">
+                                <div class="radio-btn-inner"></div>
+                            </div>
+                        </a>    
+                    </div>
+                </div>
+
+                <div class="pnr-input-wrapper">
+                    <input class="pnr-input-text" type="text" placeholder="Enter train name or numberr" name="pnrNo" id="" pattern="[0-9]*" inputmode="numeric" value="" fdprocessedid="5d7ial">
+                    <button class=" button  pnr-btn">Check Status</button>
+                </div>
+        </div>
+    </section>
+
+    <div class="margin-top"></div>
+
+    <section class="section-2">
+        <div class="container-2">
+            <div class="heading">Top 10 trains with highest searches for train status</div>
+            <div class="train-wrapper">
+                
+                <div class="train-container-wrapper">
+                    <div class="train-container-1">
+                        <div class="train-name">50104 RN DIVA PAS SPL</div>
+
+                        <div class="days">
+                            <div>
+                                <span class="running-days-name-yes">M</span>
+                            </div>
+                            <div>
+                                <span class="running-days-name-yes">T</span>
+                            </div>
+                            <div>
+                                <span class="running-days-name-yes">W</span>
+                            </div>
+                            <div>
+                                <span class="running-days-name-yes">T</span>
+                            </div>
+                            <div>
+                                <span class="running-days-name-yes">F</span>
+                            </div>
+                            <div>
+                                <span class="running-days-name-yes">S</span>
+                            </div>
+                            <div>
+                                <span class="running-days-name-yes">S</span>
+                            </div>
+                        </div>
+
+                        <div class="seats">
+                            <span>GEN</span>
+                        </div>
+                    </div>
+
+                    <div class="train-container-2">
+                        <div class="sub-container-1">
+                            <div class="time">1:25 PM</div>
+                            <div class="satation-name">RATNAGIRI</div>
+                            <div class="station-code">RN</div>
+                        </div>
+
+                        <div class="sub-container-2">
+                            <div class="duration-wrapper">
+                                <div class="container-lines"></div>
+                                <div class="duration">7 h 83 min</div>
+                                <div class="connecting-lines"></div>
+                            </div>
+                        </div>
+
+                        <div class="sub-container-3">
+                            <div class="time">5:35</div>
+                            <div class="satation-name">DIVA</div>
+                            <div class="station-code">DIVA</div>
+                        </div>
+                    </div>
+
+                    <div class="train-container-3">
+                        <button class="availability">Show Availability</button>
+                    </div>
+                    
+                </div>
+
+                <div class="train-container-wrapper">
+                    <div class="train-container-1">
+                        <div class="train-name">18208 AII DURG EXP</div>
+
+                        <div class="days">
+                            <div>
+                                <span class="running-days-name-no">M</span>
+                            </div>
+                            <div>
+                                <span class="running-days-name-yes">T</span>
+                            </div>
+                            <div>
+                                <span class="running-days-name-no">W</span>
+                            </div>
+                            <div>
+                                <span class="running-days-name-no">T</span>
+                            </div>
+                            <div>
+                                <span class="running-days-name-no">F</span>
+                            </div>
+                            <div>
+                                <span class="running-days-name-no">S</span>
+                            </div>
+                            <div>
+                                <span class="running-days-name-no">S</span>
+                            </div>
+                        </div>
+
+                        <div class="seats">
+                            <span>1A</span>
+                            <span>2A</span>
+                            <span>3A</span>
+                            <span>3E</span>
+                            <span>SL</span>
+                        </div>
+                    </div>
+
+                    <div class="train-container-2">
+                        <div class="sub-container-1">
+                            <div class="time">10:10 PM</div>
+                            <div class="satation-name">AJMER JN</div>
+                            <div class="station-code">ALL</div>
+                        </div>
+
+                        <div class="sub-container-2">
+                            <div class="duration-wrapper">
+                                <div class="container-lines"></div>
+                                <div class="duration">26 h 75 min</div>
+                                <div class="connecting-lines"></div>
+                            </div>
+                        </div>
+
+                        <div class="sub-container-3">
+                            <div class="time">7:25 PM</div>
+                            <div class="satation-name">DURG</div>
+                            <div class="station-code">DURG</div>
+                        </div>
+                    </div>
+
+                    <div class="train-container-3">
+                        <button class="availability">Show Availability</button>
+                    </div>
+                    
+                </div>
+
+                <div class="train-container-wrapper">
+                    <div class="train-container-1">
+                        <div class="train-name">15065 GKP PNVL EXP</div>
+                
+                        <div class="days">
+                            <div>
+                                <span class="running-days-name-yes">M</span>
+                            </div>
+                            <div>
+                                <span class="running-days-name-yes">T</span>
+                            </div>
+                            <div>
+                                <span class="running-days-name-no">W</span>
+                            </div>
+                            <div>
+                                <span class="running-days-name-yes">T</span>
+                            </div>
+                            <div>
+                                <span class="running-days-name-yes">F</span>
+                            </div>
+                            <div>
+                                <span class="running-days-name-no">S</span>
+                            </div>
+                            <div>
+                                <span class="running-days-name-yes">S</span>
+                            </div>
+                        </div>
+                
+                        <div class="seats">
+                            <span>2A</span>
+                            <span>3A</span>
+                            <span>SL</span>
+                        </div>
+                    </div>
+                
+                    <div class="train-container-2">
+                        <div class="sub-container-1">
+                            <div class="time">2:50 PM</div>
+                            <div class="station-name">GORAKHPUR JN</div>
+                            <div class="station-code">GKP</div>
+                        </div>
+                
+                        <div class="sub-container-2">
+                            <div class="duration-wrapper">
+                                <div class="container-lines"></div>
+                                <div class="duration">33 h 42 min</div>
+                                <div class="connecting-lines"></div>
+                            </div>
+                        </div>
+                
+                        <div class="sub-container-3">
+                            <div class="time">5:25 AM</div>
+                            <div class="station-name">PANVEL</div>
+                            <div class="station-code">PNV</div>
+                        </div>
+                    </div>
+                
+                    <div class="train-container-3">
+                        <button class="availability">Show Availability</button>
+                    </div>
+                </div>
+                
+                <div class="train-container-wrapper">
+                    <div class="train-container-1">
+                        <div class="train-name">17480 TPTY PURI EXP</div>
+                
+                        <div class="days">
+                            <div>
+                                <span class="running-days-name-yes">M</span>
+                            </div>
+                            <div>
+                                <span class="running-days-name-yes">T</span>
+                            </div>
+                            <div>
+                                <span class="running-days-name-yes">W</span>
+                            </div>
+                            <div>
+                                <span class="running-days-name-no">T</span>
+                            </div>
+                            <div>
+                                <span class="running-days-name-yes">F</span>
+                            </div>
+                            <div>
+                                <span class="running-days-name-yes">S</span>
+                            </div>
+                            <div>
+                                <span class="running-days-name-no">S</span>
+                            </div>
+                        </div>
+                
+                        <div class="seats">
+                            <span>2A</span>
+                            <span>3A</span>
+                            <span>SL</span>
+                        </div>
+                    </div>
+                
+                    <div class="train-container-2">
+                        <div class="sub-container-1">
+                            <div class="time">2:35 PM</div>
+                            <div class="station-name">TIRUPATI</div>
+                            <div class="station-code">TPTY</div>
+                        </div>
+                
+                        <div class="sub-container-2">
+                            <div class="duration-wrapper">
+                                <div class="container-lines"></div>
+                                <div class="duration">27 h 92 min</div>
+                                <div class="connecting-lines"></div>
+                            </div>
+                        </div>
+                
+                        <div class="sub-container-3">
+                            <div class="time">10:40 AM</div>
+                            <div class="station-name">PURI</div>
+                            <div class="station-code">PURI</div>
+                        </div>
+                    </div>
+                
+                    <div class="train-container-3">
+                        <button class="availability">Show Availability</button>
+                    </div>
+                </div>
+                
+                <div class="train-container-wrapper">
+                    <div class="train-container-1">
+                        <div class="train-name">15018 GKP LTT EXP</div>
+                
+                        <div class="days">
+                            <div>
+                                <span class="running-days-name-yes">M</span>
+                            </div>
+                            <div>
+                                <span class="running-days-name-yes">T</span>
+                            </div>
+                            <div>
+                                <span class="running-days-name-yes">W</span>
+                            </div>
+                            <div>
+                                <span class="running-days-name-yes">T</span>
+                            </div>
+                            <div>
+                                <span class="running-days-name-yes">F</span>
+                            </div>
+                            <div>
+                                <span class="running-days-name-yes">S</span>
+                            </div>
+                            <div>
+                                <span class="running-days-name-yes">S</span>
+                            </div>
+                        </div>
+                
+                        <div class="seats">
+                            <span>1A</span>
+                            <span>2A</span>
+                            <span>3A</span>
+                            <span>SL</span>
+                        </div>
+                    </div>
+                
+                    <div class="train-container-2">
+                        <div class="sub-container-1">
+                            <div class="time">5:30 PM</div>
+                            <div class="station-name">GORAKHPUR JN</div>
+                            <div class="station-code">GKP</div>
+                        </div>
+                
+                        <div class="sub-container-2">
+                            <div class="duration-wrapper">
+                                <div class="container-lines"></div>
+                                <div class="duration">35 h 75 min</div>
+                                <div class="connecting-lines"></div>
+                            </div>
+                        </div>
+                
+                        <div class="sub-container-3">
+                            <div class="time">5:45 AM</div>
+                            <div class="station-name">LOKMANYATILAK T</div>
+                            <div class="station-code">LTT</div>
+                        </div>
+                    </div>
+                
+                    <div class="train-container-3">
+                        <button class="availability">Show Availability</button>
+                    </div>
+                </div>
+
+                <div class="train-container-wrapper">
+                    <div class="train-container-1">
+                        <div class="train-name">12345 SARAIGHAT EXP</div>
+                
+                        <div class="days">
+                            <div>
+                                <span class="running-days-name-yes">M</span>
+                            </div>
+                            <div>
+                                <span class="running-days-name-yes">T</span>
+                            </div>
+                            <div>
+                                <span class="running-days-name-yes">W</span>
+                            </div>
+                            <div>
+                                <span class="running-days-name-yes">T</span>
+                            </div>
+                            <div>
+                                <span class="running-days-name-yes">F</span>
+                            </div>
+                            <div>
+                                <span class="running-days-name-yes">S</span>
+                            </div>
+                            <div>
+                                <span class="running-days-name-yes">S</span>
+                            </div>
+                        </div>
+                
+                        <div class="seats">
+                            <span>1A</span>
+                            <span>2A</span>
+                            <span>3A</span>
+                            <span>3E</span>
+                            <span>SL</span>
+                        </div>
+                    </div>
+                
+                    <div class="train-container-2">
+                        <div class="sub-container-1">
+                            <div class="time">10:05 AM</div>
+                            <div class="station-name">HOWRAH JN</div>
+                            <div class="station-code">HWH</div>
+                        </div>
+                
+                        <div class="sub-container-2">
+                            <div class="duration-wrapper">
+                                <div class="container-lines"></div>
+                                <div class="duration">18 h 0 min</div>
+                                <div class="connecting-lines"></div>
+                            </div>
+                        </div>
+                
+                        <div class="sub-container-3">
+                            <div class="time">4:05 PM</div>
+                            <div class="station-name">GUWAHATI</div>
+                            <div class="station-code">GHY</div>
+                        </div>
+                    </div>
+                
+                    <div class="train-container-3">
+                        <button class="availability">Show Availability</button>
+                    </div>
+                </div>
+
+                <div class="train-container-wrapper">
+                    <div class="train-container-1">
+                        <div class="train-name">02563 BJU NDLS SPL</div>
+                
+                        <div class="days">
+                            <div>
+                                <span class="running-days-name-yes">M</span>
+                            </div>
+                            <div>
+                                <span class="running-days-name-yes">T</span>
+                            </div>
+                            <div>
+                                <span class="running-days-name-yes">W</span>
+                            </div>
+                            <div>
+                                <span class="running-days-name-yes">T</span>
+                            </div>
+                            <div>
+                                <span class="running-days-name-yes">F</span>
+                            </div>
+                            <div>
+                                <span class="running-days-name-yes">S</span>
+                            </div>
+                            <div>
+                                <span class="running-days-name-yes">S</span>
+                            </div>
+                        </div>
+                
+                        <div class="seats">
+                            <span>3E</span>
+                            <span>3A</span>
+                            <span>SL</span>
+                        </div>
+                    </div>
+                
+                    <div class="train-container-2">
+                        <div class="sub-container-1">
+                            <div class="time">5:10 AM</div>
+                            <div class="station-name">BARAUNI JN</div>
+                            <div class="station-code">BJU</div>
+                        </div>
+                
+                        <div class="sub-container-2">
+                            <div class="duration-wrapper">
+                                <div class="container-lines"></div>
+                                <div class="duration">21 h 5 min</div>
+                                <div class="connecting-lines"></div>
+                            </div>
+                        </div>
+                
+                        <div class="sub-container-3">
+                            <div class="time">7:40 AM</div>
+                            <div class="station-name">NEW DELHI</div>
+                            <div class="station-code">NDLS</div>
+                        </div>
+                    </div>
+                
+                    <div class="train-container-3">
+                        <button class="availability">Show Availability</button>
+                    </div>
+                </div>
+
+                <div class="train-container-wrapper">
+                    <div class="train-container-1">
+                        <div class="train-name">16590 RANI CHENNAMMA</div>
+                
+                        <div class="days">
+                            <div>
+                                <span class="running-days-name-yes">M</span>
+                            </div>
+                            <div>
+                                <span class="running-days-name-yes">T</span>
+                            </div>
+                            <div>
+                                <span class="running-days-name-yes">W</span>
+                            </div>
+                            <div>
+                                <span class="running-days-name-yes">T</span>
+                            </div>
+                            <div>
+                                <span class="running-days-name-yes">F</span>
+                            </div>
+                            <div>
+                                <span class="running-days-name-yes">S</span>
+                            </div>
+                            <div>
+                                <span class="running-days-name-yes">S</span>
+                            </div>
+                        </div>
+                
+                        <div class="seats">
+                            <span>1A</span>
+                            <span>2A</span>
+                            <span>3A</span>
+                            <span>SL</span>
+                        </div>
+                    </div>
+                
+                    <div class="train-container-2">
+                        <div class="sub-container-1">
+                            <div class="time">6:15 AM</div>
+                            <div class="station-name">SANGLI</div>
+                            <div class="station-code">SLI</div>
+                        </div>
+                
+                        <div class="sub-container-2">
+                            <div class="duration-wrapper">
+                                <div class="container-lines"></div>
+                                <div class="duration">15 h 25 min</div>
+                                <div class="connecting-lines"></div>
+                            </div>
+                        </div>
+                
+                        <div class="sub-container-3">
+                            <div class="time">3:00 PM</div>
+                            <div class="station-name">KSR BENGALURU</div>
+                            <div class="station-code">SBC</div>
+                        </div>
+                    </div>
+                
+                    <div class="train-container-3">
+                        <button class="availability">Show Availability</button>
+                    </div>
+                </div>
+                
+                <div class="train-container-wrapper">
+                    <div class="train-container-1">
+                        <div class="train-name">09058 MAJN UDN SPL</div>
+                
+                        <div class="days">
+                            <div>
+                                <span class="running-days-name-yes">M</span>
+                            </div>
+                            <div>
+                                <span class="running-days-name-no">T</span>
+                            </div>
+                            <div>
+                                <span class="running-days-name-no">W</span>
+                            </div>
+                            <div>
+                                <span class="running-days-name-yes">T</span>
+                            </div>
+                            <div>
+                                <span class="running-days-name-no">F</span>
+                            </div>
+                            <div>
+                                <span class="running-days-name-no">S</span>
+                            </div>
+                            <div>
+                                <span class="running-days-name-no">S</span>
+                            </div>
+                        </div>
+                
+                        <div class="seats">
+                            <span>2A</span>
+                            <span>3A</span>
+                            <span>SL</span>
+                        </div>
+                    </div>
+                
+                    <div class="train-container-2">
+                        <div class="sub-container-1">
+                            <div class="time">9:05 PM</div>
+                            <div class="station-name">MANGALURU JN</div>
+                            <div class="station-code">MAJN</div>
+                        </div>
+                
+                        <div class="sub-container-2">
+                            <div class="duration-wrapper">
+                                <div class="container-lines"></div>
+                                <div class="duration">23 h 08 min</div>
+                                <div class="connecting-lines"></div>
+                            </div>
+                        </div>
+                
+                        <div class="sub-container-3">
+                            <div class="time">10:00 PM</div>
+                            <div class="station-name">UDHNA JN</div>
+                            <div class="station-code">UDN</div>
+                        </div>
+                    </div>
+                
+                    <div class="train-container-3">
+                        <button class="availability">Show Availability</button>
+                    </div>
+                </div>
+                
+                <div class="train-container-wrapper">
+                    <div class="train-container-1">
+                        <div class="train-name">12626 KERALA EXPRESS</div>
+                
+                        <div class="days">
+                            <div>
+                                <span class="running-days-name-yes">M</span>
+                            </div>
+                            <div>
+                                <span class="running-days-name-yes">T</span>
+                            </div>
+                            <div>
+                                <span class="running-days-name-yes">W</span>
+                            </div>
+                            <div>
+                                <span class="running-days-name-yes">T</span>
+                            </div>
+                            <div>
+                                <span class="running-days-name-yes">F</span>
+                            </div>
+                            <div>
+                                <span class="running-days-name-yes">S</span>
+                            </div>
+                            <div>
+                                <span class="running-days-name-yes">S</span>
+                            </div>
+                        </div>
+                
+                        <div class="seats">
+                            <span>2A</span>
+                            <span>3A</span>
+                            <span>3E</span>
+                            <span>SL</span>
+                        </div>
+                    </div>
+                
+                    <div class="train-container-2">
+                        <div class="sub-container-1">
+                            <div class="time">9:50 PM</div>
+                            <div class="station-name">NEW DELHI</div>
+                            <div class="station-code">NDLS</div>
+                        </div>
+                
+                        <div class="sub-container-2">
+                            <div class="duration-wrapper">
+                                <div class="container-lines"></div>
+                                <div class="duration">49 h 67 min</div>
+                                <div class="connecting-lines"></div>
+                            </div>
+                        </div>
+                
+                        <div class="sub-container-3">
+                            <div class="time">8:10 PM</div>
+                            <div class="station-name">TRIVANDRUM CNTL</div>
+                            <div class="station-code">TVC</div>
+                        </div>
+                    </div>
+                
+                    <div class="train-container-3">
+                        <button class="availability">Show Availability</button>
+                    </div>
+                </div>
+                
+                
+            </div>
+        </div>
+    </section>
+
+    <section class="section-3">
+        <div class="container-3">
+
+            <div class="qsns">
+                <div class="qsn">Check Live Train Running Status</div>
+                <div class="ans">In a world where everyone wants to stay updated with what is happening around them, staying on top of things is essential. From food delivery to online shopping, you would have definitely tracked the order. In the same way, you can also check the live train running status. Among the various innovations that make life easier, checking online train status is highly significant as it has made train travel more accessible and convenient. You can check live train status instantly on redRail, eliminating the need to stand in long queues to enquire about the train at railway stations. Several platforms offer this service to confirm the current train running status. Therefore, redRail, an authorized partner of IRCTC, assures that the information you receive about the train is accurate. Using the redRail app, you can decide when to reach the railway station. </div>
+            </div>
+
+            <div class="qsns">
+                <div class="qsn">What You Would Know about Live Train Status?</div>
+                <div class="ans">
+                    <p>Checking live train status is highly beneficial for passengers while travelling. Besides providing flexibility to plan travel, it also helps you track the live location of your train, allowing you to reach the railway station at your convenience. By checking the train's running status, you can overcome the challenges of boarding a delayed train at the last minute. Besides, booking train tickets, tracking live train status are equally important to enhance your travelling experience. redRail is a reliable platform that provides accurate information about the train's running status. Check out the information when you check live train status.</p>
+                    <ul>
+                        <li>Date and day of the journey</li>
+                        <li>Time of departure from the starting station</li>
+                        <li>Status and time of the train crossing from one station to another</li>
+                        <li>Total distance covered by the train</li>
+                        <li>Estimated time of arrival and departure from each station</li>
+                        <li>Distance between two intermediate stations</li>
+                        <li>Arrival and departure time taken from one intermediate station to another</li>
+                        <li>Platform number of every station the train stops at</li>
+                    </ul>
+                    
+                </div>
+            </div>
+
+            <div class="qsns">
+                <div class="qsn">Role of NTES in Checking Live Train Status</div>
+                <div class="ans">
+                    <p>The National Train Enquiry System (NTES train Enquiry) is an advanced system introduced by the Indian railways. It helps passengers gather all kinds of information related to their train travel. The NTES is a relatively comprehensive system that provides passengers with real-time information about the current train running status through various interfaces.</p>
+                    <h5>Key Features of National Train Enquiry System</h5>
+                    <p>Some of the important features offered by NTES system are as follows:</p>
+                    <ul>
+                        <li>Spot your train by entering the train number or name.</li>
+                        <li>Enter the source to the destination name to stay informed about the live station. Also, check the trains running every 2, 4, and 8 hours.</li>
+                        <li>Schedule your train with the name or number of the train, followed by the journey date.</li>
+                        <li>Explore trains between stations by entering the destination to the source station, followed by the types of trains running between these stations.</li>
+                        <li>Check PNR status.</li>
+                        <li>Get regular updates about any delay, diversion, rescheduling, station timetable, parcel and heritage trains.</li>
+                    </ul>
+                    
+                    <p>This easy-to-use platform's GPS tracking system allows you to spot your train from anywhere and at any time. Now, you can stay updated with your train's online train running status via the redRail mobile app.</p>
+                </div>
+            </div>
+
+            <div class="qsns">
+                <div class="qsn">How to Check IRCTC Train Running Status on redRail?</div>
+                <div class="ans">
+                    <p>Using the redRail app or website will help you get accurate real-time updates about your train. Follow the step-by-step instructions to check the live train status on redRail.</p>
+                    <h5>Check Live Train Running Status using redRail App</h5>
+                    <ul>
+                        <li><h1>Step 1:</h1> Download the redRail app on your mobile device.</li>
+                        <li><h1>Step 2:</h1> Click on the Live Status option.</li>
+                        <li><h1>Step 3:</h1> Enter the train number (the train number is mentioned on your ticket) along with the name of the station (the name of the station is optional)</li>
+                        <li><h1>Step 4:</h1> Click on the Spot my Train option to initiate the live tracking of your train.</li>
+                        <li><h1>Step 5:</h1> The live train running status is displayed on your screen.</li>
+                    </ul>
+                    
+                    <h5>Check Live Train Running Status using redRail Website</h5>
+                    <ul>
+                        <li><h1>Step 1:</h1> Click on the redRail icon displayed at the top of the home page.</li>
+                        <li><h1>Step 2:</h1> Click on the Live Status option.</li>
+                        <li><h1>Step 3:</h1> Enter the train number (the train number is mentioned on your ticket) along with the name of the station (the name of the station is optional)</li>
+                        <li><h1>Step 4:</h1> Click on the Spot my Train option to display your train's live location on the screen.</li>
+                    </ul>                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-4">
+        <div class="container-4">
+            <div class="faq-head">FAQs about Train Running Status</div>
+    
+            <div class="faq-qsns">
+                <div class="faq-qsn">
+                    <h4>How accurate is the live train running status information?</h4>
+                    <i class="fa-solid fa-angle-up"></i>
+                </div>
+                <div class="faq-ans">
+                    <p>redRail, an official partner of IRCTC, offers accurate real-time information about the live train running status.</p>
+                </div>
+            </div>
+            <hr>
+    
+            <div class="faq-qsns">
+                <div class="faq-qsn">
+                    <h4>Can I check the live train status for all trains?</h4>
+                    <i class="fa-solid fa-angle-up"></i>
+                </div>
+                <div class="faq-ans">
+                    <p>Yes, you can check the live train status for all trains with details on train schedules, delays, cancellations, arrival & departure time and more.</p>
+                </div>
+            </div>
+            <hr>
+    
+            <div class="faq-qsns">
+                <div class="faq-qsn">
+                    <h4>Where do I find the train number?</h4>
+                    <i class="fa-solid fa-angle-up"></i>
+                </div>
+                <div class="faq-ans">
+                    <p>The train number is mentioned at the top of the ticket, followed by other journey-related information, such as the journey date and passenger details.</p>
+                </div>
+            </div>
+            <hr>
+    
+            <div class="faq-qsns">
+                <div class="faq-qsn">
+                    <h4>Is PNR necessary to find the live IRCTC train running status?</h4>
+                    <i class="fa-solid fa-angle-up"></i>
+                </div>
+                <div class="faq-ans">
+                    <p>No, you do not need only the PNR number to check the live train status. You can also enter the train name or number to check the train's running status.</p>
+                </div>
+            </div>
+            <hr>
+    
+            <div class="faq-qsns">
+                <div class="faq-qsn">
+                    <h4>What does ETA mean?</h4>
+                    <i class="fa-solid fa-angle-up"></i>
+                </div>
+                <div class="faq-ans">
+                    <p>When checking the current train running status, ETA refers to your train's Expected/ Estimated Time of Arrival. ETA is displayed while checking the live train running status and may change due to various factors.</p>
+                </div>
+            </div>
+            <hr>
+    
+            <div class="faq-qsns">
+                <div class="faq-qsn">
+                    <h4>Can I check the train live status on a map?</h4>
+                    <i class="fa-solid fa-angle-up"></i>
+                </div>
+                <div class="faq-ans">
+                    <p>Yes, you can locate the exact position of your train on the map. By entering details like travel points and date, you can track the train's live status on a map.</p>
+                </div>
+            </div>
+            <hr>
+    
+            <div class="faq-qsns">
+                <div class="faq-qsn">
+                    <h4>How is delay or on-time information calculated for a running train?</h4>
+                    <i class="fa-solid fa-angle-up"></i>
+                </div>
+                <div class="faq-ans">
+                    <p>The delay or on-time status is calculated based on the ETA at upcoming stations. The railways adjust schedules based on actual running times to keep passengers informed.</p>
+                </div>
+            </div>
+            <hr>
+    
+            <div class="faq-qsns">
+                <div class="faq-qsn">
+                    <h4>Where can I check my train running status?</h4>
+                    <i class="fa-solid fa-angle-up"></i>
+                </div>
+                <div class="faq-ans">
+                    <p>You can check the live train status on the redRail website or application by entering the train name and station details.</p>
+                </div>
+            </div>
+            <hr>
+    
+            <div class="faq-qsns">
+                <div class="faq-qsn">
+                    <h4>Can I check the train running status for all types of trains?</h4>
+                    <i class="fa-solid fa-angle-up"></i>
+                </div>
+                <div class="faq-ans">
+                    <p>Yes, you can check the live train status for different types of trains like Passenger, Vande Bharat, Tejas, Rajdhani, Shatabdi, and others by entering source and destination station details.</p>
+                </div>
+            </div>
+            <hr>
+    
+            <div class="faq-qsns">
+                <div class="faq-qsn">
+                    <h4>How will I know if my train is delayed?</h4>
+                    <i class="fa-solid fa-angle-up"></i>
+                </div>
+                <div class="faq-ans">
+                    <p>redRail provides real-time updates on train delays, ensuring you're always informed about the live train status and precise timings.</p>
+                </div>
+            </div>
+            <hr>
+        </div>
+    </section>    
+
+    <section class="section-5">
+        <div class="container-5">
+           
+            <div>
+                <h1>Top Train Routes</h1>
+                <ul id="top-routes">
+                    <li><a href="#">Chennai to Bangalore Trains</a></li>
+                    <li><a href="#">Bangalore to Chennai Trains</a></li>
+                    <li><a href="#">Chandigarh to Delhi Trains</a></li>
+                    <li><a href="#">Mumbai to Pune Trains</a></li>
+                    <li><a href="#">Ahmedabad to Mumbai Trains</a></li>
+                    <li><a href="#">Mumbai to Ahmedabad Trains</a></li>
+                    <li><a href="#">Delhi to Chandigarh Trains</a></li>
+                    <li><a href="#">Pune to Mumbai Trains</a></li>
+                    <li><a href="#">Lucknow to Delhi Trains</a></li>
+                    <li><a href="#">Delhi to Lucknow Trains</a></li>
+                </ul>
+            </div>
+            <div>
+                <h1>Other Train Routes</h1>
+                <ul id="other-routes">
+                    <li><a href="#">Mumbai to Goa Trains</a></li>
+                    <li><a href="#">Delhi to Katra Trains</a></li>
+                    <li><a href="#">Delhi to Jaipur Trains</a></li>
+                    <li><a href="#">Bangalore to Mangalore Trains</a></li>
+                    <li><a href="#">Delhi to Amritsar Trains</a></li>
+                    <li><a href="#">Delhi to Chandigarh Trains</a></li>
+                    <li><a href="#">Delhi to Haridwar Trains</a></li>
+                    <li><a href="#">Delhi to Mumbai Trains</a></li>
+                    <li><a href="#">Gaya to Patna Trains</a></li>
+                    <li><a href="#">Jaipur to Delhi Trains</a></li>
+                </ul>
+            </div>
+            <div>
+                <h1>Top Railway Stations</h1>
+                <ul id="top-stations">
+                    <li><a href="#">New Delhi</a></li>
+                    <li><a href="#">Mumbai Central</a></li>
+                    <li><a href="#">Secunderabad Junction</a></li>
+                    <li><a href="#">MGR Chennai Central</a></li>
+                    <li><a href="#">Patna Junction</a></li>
+                    <li><a href="#">Jaipur Junction</a></li>
+                    <li><a href="#">Howrah Junction</a></li>
+                    <li><a href="#">KSR Bengaluru City Junction</a></li>
+                    <li><a href="#">Pune Junction</a></li>
+                    <li><a href="#">Kanpur Central</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container-7">
+            <div class="footer-left">
+                <div class="link-sec">
+                    <h1>About redBus</h1>
+                    <div>
+                        <a href="#">About Us</a>
+                        <a href="#">Investor Relations</a>
+                        <a href="#">Contact Us</a>
+                        <a href="#">Mobile Version</a>
+                        <a href="#">redBus on Mobile</a>
+                        <a href="#">Sitemap</a>
+                        <a href="#">Offers</a>
+                        <a href="#">Careers</a>
+                        <a href="#">Values</a>
+                    </div>
+                </div>
+
+                <div class="link-sec">
+                    <h1>Info</h1>
+                    <div>
+                        <a href="#">Terms and Conditions</a>
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">FAQ</a>
+                        <a href="#">Blog</a>
+                        <a href="#">Bus Operator</a>
+                        <a href="#">Registration</a>
+                        <a href="#">Agent Registration</a>
+                        <a href="#">Insurance Partner</a>
+                        <a href="#">User Agreement</a>
+                    </div>
+                </div>
+
+                <div class="link-sec">
+                    <h1>Global Sites</h1>
+                    <div>
+                        <a href="#">India</a>
+                        <a href="#">Singapore</a>
+                        <a href="#">Malaysia</a>
+                        <a href="#">Indonesia</a>
+                        <a href="#">Peru</a>
+                        <a href="#">Colombia</a>
+                    </div>
+                </div>
+                
+                <div class="link-sec">
+                    <h1>Our Partners</h1>
+                    <div>
+                        <a href="#">Goibibo Bus</a>
+                        <a href="#">Goibibo Hotels</a>
+                        <a href="#">Makemytrip Bus</a>
+                        <a href="#">Makemytrip Hotels</a>
+                    </div>
+
+                </div>
+            </div>  
+
+            <div class="footer-right">
+                    <div class="footer-logo">
+                        <img src="https://www.redbus.in/railways/public/images/rb_logo.svg" alt="">
+                    </div>
+                    <p>redBus is the worlds largest online bus ticket booking service trusted by over 8 million happy customers globally. redBus offers bus ticket booking through its website,iOS and Android mobile apps for all major routes.</p>
+                    <p>Ⓒ Redbus India Private Limited (formerly known as ‘Ibibo Group Private Limited’).</p>
+            </div>
+    </footer>
+
+    <script src="live.js"></script>
+</body>
+</html>
